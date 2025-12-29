@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Pro | jQuery Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+     
+    <nav class="navbar">
+        <div class="logo">Mi Portafolio<span>.</span></div>
+        <ul class="nav-links" >
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hola, Soy un Desarrollador</h1>          
+            <p>¡Hola! Mi nombre es Noemy y soy una estudiante de Programación FullStack apasionada por el desarrollo web y la tecnología. Me dedico a aprender y aplicar
+                mis habilidades en proyectos creativos e innovadores. </p>
+            <a href="#proyectos" class="btn-primary">Ver mi trabajo</a>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos (Espacio para el scroll) -->
+    <section id="proyectos" class="section-padding">
+            <div class="container">
+                <h3 class="text-center mb-4">Mis Projectos</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Proyecto 1: Mediación Familiar</h4>
+                                <p class="card-text">A responsive e-commerce website built with React and Node.js.</p>
+                                <a href="https://github.com/nrivera2221/MediacionFamiliar" class="btn btn-outline-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Proyecto 2: Clínica</h4>
+                                <p class="card-text">A task management application developed using Vue.js and a RESTful API.</p>
+                                <a href="https://github.com/nrivera2221/Clinica" class="btn btn-outline-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Proyecto 3: Mi Portafolio</h4>
+                                <p class="card-text">A personal blog site implemented with HTML, CSS, and JavaScript.</p>
+                                <a href="https://github.com/nrivera2221/portafolio" class="btn btn-outline-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-padding">
+        <div class="form-container">
+            <h2>Hablemos</h2>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                </div>
+                <div class="input-group">
+                    <textarea id="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?"></textarea>
+                </div>
+                <button type="submit" id="btnSubmit">Enviar Mensaje</button>
+            </form>
+            <div id="feedbackMessage"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diseñado con jQuery</p>
+    </footer>
+
+    <!-- INCLUSIÓN DE JQUERY (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
